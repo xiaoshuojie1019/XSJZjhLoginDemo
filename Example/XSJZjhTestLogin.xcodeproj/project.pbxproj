@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		0094AE06DD25ED929C8E7433 /* Pods_XSJZjhTestLogin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XSJZjhTestLogin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2992CEA7BA00233500D2717D /* Pods-XSJZjhTestLogin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSJZjhTestLogin_Example.release.xcconfig"; path = "Target Support Files/Pods-XSJZjhTestLogin_Example/Pods-XSJZjhTestLogin_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2D587531DB230AA79138B9C1 /* XSJZjhTestLogin.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XSJZjhTestLogin.podspec; path = ../XSJZjhTestLogin.podspec; sourceTree = "<group>"; };
+		2D587531DB230AA79138B9C1 /* XSJZjhTestLogin.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XSJZjhTestLogin.podspec; path = ../XSJZjhTestLogin.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3C8CA06B45C53E747605C262 /* Pods-XSJZjhTestLogin_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSJZjhTestLogin_Tests.debug.xcconfig"; path = "Target Support Files/Pods-XSJZjhTestLogin_Tests/Pods-XSJZjhTestLogin_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		40EC24FC749AFF46D1FE9990 /* Pods_XSJZjhTestLogin_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XSJZjhTestLogin_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* XSJZjhTestLogin_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XSJZjhTestLogin_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,9 +44,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		9DF0F1630ABD8F70FBF5C805 /* Pods-XSJZjhTestLogin_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSJZjhTestLogin_Example.debug.xcconfig"; path = "Target Support Files/Pods-XSJZjhTestLogin_Example/Pods-XSJZjhTestLogin_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B23D1EAF2620701C50CC5022 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B23D1EAF2620701C50CC5022 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B8A4269B53C461BD7A194C49 /* Pods-XSJZjhTestLogin_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSJZjhTestLogin_Tests.release.xcconfig"; path = "Target Support Files/Pods-XSJZjhTestLogin_Tests/Pods-XSJZjhTestLogin_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C476714CCDBA81E410AABFA1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C476714CCDBA81E410AABFA1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,6 @@
 				3C8CA06B45C53E747605C262 /* Pods-XSJZjhTestLogin_Tests.debug.xcconfig */,
 				B8A4269B53C461BD7A194C49 /* Pods-XSJZjhTestLogin_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -292,11 +292,15 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-XSJZjhTestLogin_Example/Pods-XSJZjhTestLogin_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/XSJZjhTestLogin/XSJZjhTestLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/XSJZjhTestNetworking/XSJZjhTestNetworking.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XSJZjhTestLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XSJZjhTestNetworking.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

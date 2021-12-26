@@ -1,0 +1,30 @@
+{
+  "name": "XSJZjhTestLogin",
+  "version": "0.1.0",
+  "summary": "A short description of XSJZjhTestLogin.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/xsj/XSJZjhTestLogin",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "xsj": "362372538@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/xsj/XSJZjhTestLogin.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "XSJZjhTestLogin/Classes/**/*",
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2.3"
+    ],
+    "XSJZjhTestNetworking": [
+
+    ]
+  }
+}

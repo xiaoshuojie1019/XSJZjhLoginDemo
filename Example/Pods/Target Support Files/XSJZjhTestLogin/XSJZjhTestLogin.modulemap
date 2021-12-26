@@ -1,0 +1,6 @@
+framework module XSJZjhTestLogin {
+  umbrella header "XSJZjhTestLogin-umbrella.h"
+
+  export *
+  module * { export * }
+}

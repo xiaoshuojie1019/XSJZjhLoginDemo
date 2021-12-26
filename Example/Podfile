@@ -4,6 +4,9 @@ platform :ios, '9.0'
 
 target 'XSJZjhTestLogin_Example' do
   pod 'XSJZjhTestLogin', :path => '../'
+  pod 'XSJZjhTestNetworking' , :path => '../../XSJZjhTestNetworking'
+  
+  #pod 'AFNetworking', '~> 2.3'
 
   target 'XSJZjhTestLogin_Tests' do
     inherit! :search_paths
